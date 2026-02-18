@@ -1,0 +1,98 @@
+/* frontend/src/styles/settings.css */
+
+/* Wire loop container */
+.wire-loop-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  overscroll-behavior: contain;
+}
+
+/* Circular wire */
+.wire-loop {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* Core */
+.wire-core {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  left: 110px;
+  top: 110px;
+  background: radial-gradient(circle, #111216 0%, #000000 70%);
+}
+
+/* Track-change flash */
+.wire-core.flash {
+  box-shadow:
+    0 0 30px rgba(255, 255, 255, 0.9),
+    0 0 60px rgba(255, 0, 255, 0.7);
+}
+
+/* Nodes */
+.wire-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.wire-node-hex {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid #00ffc8;
+  background: rgba(5, 6, 7, 0.9);
+  box-shadow: 0 0 6px rgba(0, 255, 200, 0.6);
+}
+
+/* Active node */
+.wire-node.active .wire-node-hex {
+  box-shadow:
+    0 0 10px rgba(0, 255, 200, 0.9),
+    0 0 18px rgba(255, 0, 255, 0.6);
+  border-color: #ffffff;
+}
+
+/* Hover ripple */
+.wire-node:hover .wire-node-hex {
+  box-shadow:
+    0 0 10px rgba(0, 255, 200, 0.9),
+    0 0 18px rgba(255, 0, 255, 0.6);
+  border-color: #ffffff;
+}
+
+/* Labels */
+.wire-node-label {
+  margin-top: 4px;
+  white-space: nowrap;
+  font-size: 10px;
+  color: #b9bbbe;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+}
+
+.wire-node-title {
+  display: block;
+}
+
+.wire-node-length {
+  display: block;
+  font-size: 9px;
+  color: #6f737a;
+}
+
+/* Neon data pulses */
+.wire-data-pulse {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00ffc8;
+  box-shadow: 0 0 10px rgba(0, 255, 200, 0.9);
+  transform: translate(-50%, -50%);
+}

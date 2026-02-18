@@ -1,0 +1,60 @@
+/* ================================
+   NERDWIRE THEME VARIABLES
+   ================================ */
+
+/* Default Theme (NerdWire Signature) */
+:root {
+  --nw-bg: #050607;
+  --nw-bg-panel: #111216;
+  --nw-bg-elevated: #1a1c21;
+  --nw-text: #ffffff;
+  --nw-text-muted: #b9bbbe;
+  --nw-accent: #00ffc8;
+  --nw-accent-secondary: #ff00ff;
+  --nw-accent-blue: #00a2ff;
+  --nw-error: #ff4f4f;
+  --nw-radius: 6px;
+  --nw-border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ================================
+   THEME: Heavy Cyberpunk
+   ================================ */
+body.theme-cyberpunk {
+  --nw-bg: #020308;
+  --nw-bg-panel: #070812;
+  --nw-bg-elevated: #101222;
+  --nw-text: #ffffff;
+  --nw-text-muted: #a7a9b0;
+  --nw-accent: #ff00ff;
+  --nw-accent-secondary: #00ffc8;
+  --nw-accent-blue: #00a2ff;
+}
+
+/* ================================
+   THEME: NerdWire Signature
+   ================================ */
+body.theme-nerdwire {
+  --nw-bg: #050607;
+  --nw-bg-panel: #111216;
+  --nw-bg-elevated: #1a1c21;
+  --nw-text: #ffffff;
+  --nw-text-muted: #b9bbbe;
+  --nw-accent: #00ffc8;
+  --nw-accent-secondary: #ff00ff;
+  --nw-accent-blue: #00a2ff;
+}
+
+/* ================================
+   THEME: Minimal Techno
+   ================================ */
+body.theme-minimal {
+  --nw-bg: #050607;
+  --nw-bg-panel: #0b0c0f;
+  --nw-bg-elevated: #14161b;
+  --nw-text: #ffffff;
+  --nw-text-muted: #b9bbbe;
+  --nw-accent: #7fdcff;
+  --nw-accent-secondary: #c0c0c0;
+  --nw-accent-blue: #4fb3ff;
+}

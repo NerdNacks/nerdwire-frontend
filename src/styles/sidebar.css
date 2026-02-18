@@ -1,0 +1,206 @@
+/* MAIN SIDEBAR LAYOUT */
+.sidebar-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #36393f;
+}
+
+/* SERVERS COLUMN (LEFT)         */
+.sidebar-servers {
+  width: 72px;
+  background: #202225;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  gap: 12px;
+  overflow-y: auto;
+  border-right: 1px solid #1a1b1e;
+}
+
+/* CHANNELS COLUMN (MIDDLE)      */
+.sidebar-channels {
+  width: 240px;
+  background: #2f3136;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  overflow-y: auto;
+  border-right: 1px solid #1a1b1e;
+}
+
+/* Channel header */
+.channel-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b9bbbe;
+  margin-bottom: 8px;
+}
+
+/* Channel item */
+.channel-item {
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #b9bbbe;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.channel-item:hover {
+  background: #3a3c43;
+  color: #ffffff;
+}
+
+/* Active channel */
+.channel-item.active {
+  background: #5865f2;
+  color: #ffffff;
+}
+
+/* RIGHT SIDEBAR (FRIENDS + NOTIFICATIONS) */
+.sidebar-right {
+  width: 300px;
+  background: #2f3136;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #1a1b1e;
+}
+
+/* Top bar (Notifications) */
+.sidebar-top-bar {
+  height: 48px;
+  border-bottom: 1px solid #1a1b1e;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Friends list area */
+.sidebar-right .friends-sidebar {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* SERVER LIST WRAPPER */
+.server-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+/* SERVER ICON BASE */
+.server-icon {
+  width: 48px;
+  height: 48px;
+  background: #36393f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.server-icon:hover {
+  border-radius: 16px;
+  background: #5865f2;
+}
+
+/* HOME BUTTON */
+.home-icon {
+  background: #5865f2;
+}
+
+.home-icon:hover {
+  background: #4752c4;
+  border-radius: 16px;
+}
+
+.home-icon-text {
+  font-size: 22px;
+}
+
+/* SERVER IMAGE */
+.server-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* SERVER LETTER (fallback) */
+.server-letter {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* DIVIDER */
+.server-divider {
+  width: 32px;
+  height: 2px;
+  background: #3a3c43;
+  margin: 4px 0;
+  border-radius: 1px;
+}
+
+/* SERVER LOADING SPINNER */
+.server-spinner {
+  width: 32px;
+  height: 32px;
+  border: 4px solid #3a3c43;
+  border-top-color: #5865f2;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-top: 20px;
+}
+
+/* CHANNEL LOADING SPINNER */
+.channel-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #3a3c43;
+  border-top-color: #5865f2;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ERROR UI */
+.server-error,
+.channel-error {
+  color: #ff6b6b;
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.server-error button,
+.channel-error button {
+  margin-top: 6px;
+  padding: 4px 10px;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.server-error button:hover,
+.channel-error button:hover {
+  background: #e85a5a;
+}

@@ -1,0 +1,50 @@
+.friends-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.friends-header {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 1px solid #202225;
+}
+
+.friends-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.friend-item:hover {
+  background: #3a3c43;
+}
+
+.friend-status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.friend-status-dot.online {
+  background: #3ba55d;
+}
+
+.friend-status-dot.offline {
+  background: #747f8d;
+}
+
+.friend-name {
+  font-size: 14px;
+  color: #ffffff;
+}
