@@ -1,15 +1,15 @@
 // frontend/src/components/home/Home.jsx
 import { useState } from "react";
 
-import ServerList from "../ServerList.jsx";
-import ChannelList from "../ChannelList.jsx";
-import CreateChannelModal from "../CreateChannelModal.jsx";
-import ServerChannelChat from "../ServerChannelChat.jsx";
-import VoiceChat from "../VoiceChat.jsx";
+import ServerList from "../components/ServerList.jsx";
+import ChannelList from "../components/ChannelList.jsx";
+import CreateChannelModal from "../components/CreateChannelModal.jsx";
+import ServerChannelChat from "../components/ServerChannelChat.jsx";
+import VoiceChat from "../components/VoiceChat.jsx";
 
-import FriendsSidebar from "../FriendsSidebar.jsx";
-import AddFriendModal from "../AddFriendModal.jsx";
-import DMChatWindow from "../DMChatWindow.jsx";
+import FriendsSidebar from "../components/FriendsSidebar.jsx";
+import AddFriendModal from "../components/AddFriendModal.jsx";
+import DMChatWindow from "../components/DMChatWindow.jsx";
 
 export default function Home({
   bubbleStyle,
