@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { usePresence } from "../context/PresenceContext";
 import "../styles/chat.css";
-import HexWireNode from "../HexWireNode";
+import HexWireNode from "./HexWireNode";
 
 const API_BASE = "http://localhost:4000";
 
