@@ -1,5 +1,5 @@
 // frontend/src/components/ServerList.jsx
-import "../../styles/chat.css";
+import "../styles/chat.css";
 import HexWireNode from "./HexWireNode";
 
 export default function ServerList({
