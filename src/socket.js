@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 
-const SOCKET_URL =
-  import.meta.env.VITE_SOCKET_URL || import.meta.env.VITE_API_BASE;
+// Force production backend URL
+const SOCKET_URL = "https://nerdwire-backend.onrender.com";
 
 const socket = io(SOCKET_URL, {
   withCredentials: false,
