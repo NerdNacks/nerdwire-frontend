@@ -1,7 +1,7 @@
 // frontend/src/components/settings/MusicSettings.jsx
 import { useState, useEffect } from "react";
 import playlistsManager from "../../utils/playlistsManager";
-import audioManager from "../../utils/audioManager";
+import audioManager from "../../utils/audioManager.js";
 
 import PlaylistWire from "./PlaylistWire";
 import ThemeSelector from "./ThemeSelector";
