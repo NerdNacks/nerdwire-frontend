@@ -7,7 +7,7 @@ import "./styles/themes.css";
 import "./styles/settings.css";
 
 import Settings from "./components/settings/Settings";
-import Home from "./components/home/Home";
+import Home from "./pages/Home.jsx";
 import Login from "./components/auth/Login";
 import Signup from "./components/auth/Signup";
 
