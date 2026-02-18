@@ -1,5 +1,5 @@
 // frontend/src/components/sidebar/Sidebar.jsx
-import "../../styles/chat.css";
+import "";
 import HexWireNode from "../HexWireNode";
 
 export default function Sidebar({ servers, channels, onSelect, lastOpened }) {
