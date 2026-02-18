@@ -1,7 +1,7 @@
 // frontend/src/components/sidebar/FriendsSidebar.jsx
 import { useEffect, useState } from "react";
 import { usePresence } from "../context/PresenceContext";
-import "../../styles/chat.css";
+import "../styles/chat.css";
 import HexWireNode from "../HexWireNode";
 
 const API_BASE = "http://localhost:4000";

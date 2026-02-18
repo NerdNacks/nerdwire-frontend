@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "../../styles/chat.css";
+import "../styles/chat.css";
 
 import UnreadHexManager from "./UnreadHexManager";
 import TypingIndicator from "./TypingIndicator";
