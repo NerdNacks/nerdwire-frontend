@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:4000";
+const API_URL = "https://nerdwire-backend.onrender.com";
 
 export async function login(email, password) {
   const res = await fetch(`${API_URL}/auth/login`, {
