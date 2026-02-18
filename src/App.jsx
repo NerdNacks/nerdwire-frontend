@@ -8,8 +8,8 @@ import "./styles/settings.css";
 
 import Settings from "./components/settings/Settings";
 import Home from "./pages/Home.jsx";
-import Login from "./components/auth/Login";
-import Signup from "./components/auth/Signup";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 // NEW: lastOpened system
 import {
